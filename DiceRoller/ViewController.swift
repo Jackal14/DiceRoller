@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
     @IBOutlet var diceImageView: UIImageView!
     @IBOutlet var criticalLabel: UILabel!
+    var audioPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +32,69 @@ class ViewController: UIViewController {
         let imageName = "d\(rolledNumber)"
         
         diceImageView.image = UIImage(named: imageName)
+//        criticalLabel.text = (rolledNumber)
+        if(rolledNumber == 20)
+        {
+            criticalLabel.text = "Critical Success"
+            
+        }
+        let pathToSound = Bundle.main.path(forResource: "rolldice", ofType: "mp3")!
+        let successSound = Bundle.main.path(forResource: "zfanfare", ofType: "mp3")!
+        let failSound = Bundle.main.path(forResource: "failwah", ofType: "mp3")!
+        
+        if(rolledNumber == 20)
+        {
+            criticalLabel.text = "Critical Success"
+            let url = URL(fileURLWithPath: successSound)
+            do
+            {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            }
+            catch
+            {
+                print("error babe")
+            }
+            
+        }
+        else if(rolledNumber == 1)
+        {
+            criticalLabel.text = "Critical Miss"
+            let url = URL(fileURLWithPath: failSound)
+            do
+            {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            }
+            catch
+            {
+                print("error babe")
+            }
+        }
+        else
+        {
+            criticalLabel.text = ""
+            let url = URL(fileURLWithPath: pathToSound)
+            do
+            {
+                audioPlayer = try AVAudioPlayer(contentsOf: url)
+                audioPlayer?.play()
+            }
+            catch
+            {
+                print("error babe")
+            }
+            
+        }
     }
+        
     
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?)
+    {
+        if (motion == .motionShake)
+            {
+                rollDice();
+            }
+    }
 }
 

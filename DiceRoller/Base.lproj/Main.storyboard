@@ -16,23 +16,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="d1" translatesAutoresizingMaskIntoConstraints="NO" id="lV2-ux-tVc">
-                                <rect key="frame" x="41" y="157" width="310" height="277"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d1" translatesAutoresizingMaskIntoConstraints="NO" id="lV2-ux-tVc">
+                                <rect key="frame" x="5" y="79" width="383" height="615"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="277" id="kbU-YH-dLs"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="5" id="3TN-sK-yFE"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOZ-Ds-JQ5">
-                                <rect key="frame" x="41" y="623" width="310" height="114"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOZ-Ds-JQ5">
+                                <rect key="frame" x="147.33333333333334" y="699" width="98.333333333333343" height="114"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="114" id="bBQ-hS-Prb"/>
+                                    <constraint firstAttribute="height" constant="114" id="N0F-ld-WKg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="36"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivr-30-kZQ">
-                                <rect key="frame" x="16" y="59" width="361" height="759"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivr-30-kZQ">
+                                <rect key="frame" x="16" y="47" width="361" height="759"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
@@ -41,18 +43,20 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="lV2-ux-tVc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8DW-Q3-y5G"/>
-                            <constraint firstItem="lV2-ux-tVc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="Iam-S8-Rh8"/>
-                            <constraint firstItem="ivr-30-kZQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="LqP-pB-jRT"/>
-                            <constraint firstItem="ivr-30-kZQ" firstAttribute="centerX" secondItem="lV2-ux-tVc" secondAttribute="centerX" id="RiX-Hr-eyE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FOZ-Ds-JQ5" secondAttribute="bottom" constant="81" id="WfV-wJ-mJe"/>
-                            <constraint firstItem="lV2-ux-tVc" firstAttribute="trailing" secondItem="FOZ-Ds-JQ5" secondAttribute="trailing" id="XNd-P0-3h1"/>
-                            <constraint firstItem="lV2-ux-tVc" firstAttribute="leading" secondItem="FOZ-Ds-JQ5" secondAttribute="leading" id="ljr-f6-0SZ"/>
-                            <constraint firstItem="ivr-30-kZQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sAG-0u-Q7C"/>
-                            <constraint firstItem="ivr-30-kZQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tA4-Vg-gxC"/>
-                            <constraint firstItem="lV2-ux-tVc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="98" id="vEs-aU-v2c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="FOZ-Ds-JQ5" secondAttribute="bottom" constant="5" id="2wL-Yq-1wP"/>
+                            <constraint firstItem="FOZ-Ds-JQ5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lV2-ux-tVc" secondAttribute="bottom" constant="5" id="6P9-0w-zEf"/>
+                            <constraint firstItem="ivr-30-kZQ" firstAttribute="centerX" secondItem="FOZ-Ds-JQ5" secondAttribute="centerX" id="Lzl-NC-Ccp"/>
+                            <constraint firstItem="lV2-ux-tVc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Npt-1I-Mwd"/>
+                            <constraint firstItem="ivr-30-kZQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="OPW-0m-vkq"/>
+                            <constraint firstItem="lV2-ux-tVc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="QZv-26-Kd8"/>
+                            <constraint firstItem="ivr-30-kZQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Vlp-zv-UFW"/>
+                            <constraint firstItem="lV2-ux-tVc" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-5" id="Zf4-WA-31t"/>
+                            <constraint firstItem="ivr-30-kZQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hIa-1Y-in1"/>
+                            <constraint firstItem="lV2-ux-tVc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="o19-22-Ijb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="FOZ-Ds-JQ5" secondAttribute="bottom" constant="5" id="p1h-xu-EBI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ivr-30-kZQ" secondAttribute="bottom" constant="12" id="xQc-eV-GO1"/>
                         </constraints>
                     </view>
                     <connections>
@@ -67,8 +71,11 @@
     </scenes>
     <resources>
         <image name="d1" width="800" height="800"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

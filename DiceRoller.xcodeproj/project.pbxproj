@@ -16,6 +16,10 @@
 		9CB7EBE8292C5278007A5178 /* DiceRollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7EBE7292C5278007A5178 /* DiceRollerTests.swift */; };
 		9CB7EBF2292C5278007A5178 /* DiceRollerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7EBF1292C5278007A5178 /* DiceRollerUITests.swift */; };
 		9CB7EBF4292C5278007A5178 /* DiceRollerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7EBF3292C5278007A5178 /* DiceRollerUITestsLaunchTests.swift */; };
+		9CB7EC01292C685A007A5178 /* failwah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9CB7EC00292C685A007A5178 /* failwah.mp3 */; };
+		9CB7EC03292C686F007A5178 /* rolldice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9CB7EC02292C686F007A5178 /* rolldice.mp3 */; };
+		9CB7EC06292C687C007A5178 /* zfanfare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9CB7EC04292C687C007A5178 /* zfanfare.mp3 */; };
+		9CB7EC07292C687C007A5178 /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9CB7EC05292C687C007A5178 /* torpedo.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		9CB7EBED292C5278007A5178 /* DiceRollerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceRollerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB7EBF1292C5278007A5178 /* DiceRollerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRollerUITests.swift; sourceTree = "<group>"; };
 		9CB7EBF3292C5278007A5178 /* DiceRollerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRollerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9CB7EC00292C685A007A5178 /* failwah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = failwah.mp3; sourceTree = "<group>"; };
+		9CB7EC02292C686F007A5178 /* rolldice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rolldice.mp3; sourceTree = "<group>"; };
+		9CB7EC04292C687C007A5178 /* zfanfare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zfanfare.mp3; sourceTree = "<group>"; };
+		9CB7EC05292C687C007A5178 /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,10 @@
 		9CB7EBC4292C5276007A5178 = {
 			isa = PBXGroup;
 			children = (
+				9CB7EC05292C687C007A5178 /* torpedo.mp3 */,
+				9CB7EC04292C687C007A5178 /* zfanfare.mp3 */,
+				9CB7EC02292C686F007A5178 /* rolldice.mp3 */,
+				9CB7EC00292C685A007A5178 /* failwah.mp3 */,
 				9CB7EBCF292C5276007A5178 /* DiceRoller */,
 				9CB7EBE6292C5278007A5178 /* DiceRollerTests */,
 				9CB7EBF0292C5278007A5178 /* DiceRollerUITests */,
@@ -231,6 +243,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB7EC06292C687C007A5178 /* zfanfare.mp3 in Resources */,
+				9CB7EC07292C687C007A5178 /* torpedo.mp3 in Resources */,
+				9CB7EC03292C686F007A5178 /* rolldice.mp3 in Resources */,
+				9CB7EC01292C685A007A5178 /* failwah.mp3 in Resources */,
 				9CB7EBDD292C5278007A5178 /* LaunchScreen.storyboard in Resources */,
 				9CB7EBDA292C5278007A5178 /* Assets.xcassets in Resources */,
 				9CB7EBD8292C5276007A5178 /* Main.storyboard in Resources */,
